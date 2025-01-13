@@ -1,0 +1,197 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header #search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Banner section */
+.banner {
+    
+    text-align: center;
+    padding: 100px 0;
+    background-image:url(image/background.jpg);
+    background-size: contain;
+    
+
+    
+
+    
+}
+
+.banner h2 {
+    font-size: 48px;
+    color:rgb(238, 11, 11);
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 24px;
+    color:#f4f4f6;
+    margin-bottom: 30px;
+}
+
+.banner .btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.banner .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Museums Information Section */
+.museums-info {
+    background-color: #71e7eb;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.museum-card {
+    background-color: #facafe;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    background-image:url(delhi.jpeg) ;
+}
+
+.museum-card img {
+    width:100%;
+    border-radius: 10px;
+   
+}
+
+.museum-card h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.museum-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.museum-card .btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.museum-card .btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Booking form */
+.booking-form {
+    background-color: rgb(243, 243, 159);
+    padding: 50px 30px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: -250px;
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.booking-form .form-group {
+    margin-bottom: 20px;
+    
+}
+
+.booking-form .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+}
+
+.booking-form .form-group input,
+.booking-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius:
+}
+
+.chatbot{
+    position: relative;
+    top: -750px;
+    right: -700px;
+    
+}

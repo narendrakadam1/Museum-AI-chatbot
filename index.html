@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Museum Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/museum-logo.png" alt="Museum Logo" class="logo-img">
+            <h1>Indian Museum</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#museums">Museums</a></li>
+                <li><a href="#exhibitions">Exhibitions</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <input type="text" placeholder="Search Museums" id="search-bar">
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <h2>Discover India's Rich History & Culture</h2>
+        <p>Book tickets to visit India's famous museums and exhibitions</p>
+        <a href="#booking-form" class="btn">Book Tickets Now</a>
+        <body>
+            
+        </body>
+        
+    </section>
+
+    <!-- Museums Information Section -->
+    <section id="museums" class="museums-info">
+        <h2>Explore Museums</h2>
+        <div class="museum-card">
+            <img src="delhi.jpeg" alt="National Museum">
+            <h3>National Museum, Delhi</h3>
+            <p>Explore the rich history of India at the National Museum in New Delhi.</p>
+            <p>Tickets: Adult - ₹50, Child - ₹20, Senior - ₹30</p>
+            <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+        <div class="museum-card">
+            <img src="victoria.jpeg" alt="Victoria Memorial">
+            <h3>Victoria Memorial, Kolkata</h3>
+            <p>Visit the iconic Victoria Memorial and explore British India history.</p>
+            <p>Tickets: Adult - ₹30, Child - ₹10, Senior - ₹20</p>
+            <a href="#booking-form" class="btn">Book Now</a>
+        </div>
+        <!-- Add more museums as needed -->
+    </section>
+
+    <!-- Ticket Booking Form -->
+    <section class="booking-form" id="booking-form">
+        <h2>Book Your Tickets</h2>
+        <form id="ticket-form">
+            <div class="form-group">
+                <label for="museum">Select Museum</label>
+                <select id="museum" name="museum">
+                    <option value="national-museum">National Museum, Delhi</option>
+                    <option value="victoria-memorial">Victoria Memorial, Kolkata</option>
+                    <!-- Add more museum options -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Select Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Select Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="visitors">Number of Visitors</label>
+                <select id="visitors" name="visitors">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ticket-type">Ticket Type</label>
+                <select id="ticket-type" name="ticket-type">
+                    <option value="adult">Adult</option>
+                    <option value="child">Child</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="total">Total Price: ₹<span id="total-price">0</span></label>
+            </div>
+
+            <button type="button" class="btn" onclick="calculateTotal()">Calculate Total</button>
+            <button type="submit" class="btn">Proceed to Checkout</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Indian Museum. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <iframe class="chatbot" width="500" height="530" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/af4fc05f-21db-4331-a4df-db1e13cc8489"></iframe>
+</body>
+</html>
